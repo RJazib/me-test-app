@@ -9,8 +9,8 @@ class ComapnyDAO {
       .returning("id");
     return id;
   }
-  async getCompany(name) {
-    const companies = await db("comapny").get();
+  async getCompany() {
+    const companies = await db("comapny").select();
     return companies;
   }
 }
