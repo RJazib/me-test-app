@@ -1,8 +1,7 @@
 const companyDAO = require("../dao/company");
 class CompanyService {
   createComapny(company) {
-    const { name } = company;
-    return companyDAO.createComapny(name);
+    return companyDAO.createComapny(company);
   }
   getCompanies() {
     return companyDAO.getCompany();

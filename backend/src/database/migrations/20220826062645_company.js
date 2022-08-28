@@ -13,6 +13,7 @@ exports.up = function (knex) {
         .primary()
         .defaultTo(knex.raw("uuid_generate_v4()"))
         .notNullable();
+      table.string("cin", false).notNullable();
       table.string("name", false).notNullable();
       table.timestamp("createdAt", { useTz: false }).defaultTo(knex.fn.now());
     });

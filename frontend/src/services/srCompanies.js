@@ -8,7 +8,10 @@ export const getDataFromApi = async (searchQuery) => {
 }
 
 export const addCompany = async (comp) => {
-  let resp = axios.post('http://localhost:8080/company', comp)
+  let resp = axios.post('http://localhost:8080/company', {
+    "cin": comp.CIN,
+    "name": comp.name
+  })
     .then((res) => {
       console.log(res.data)
     }).catch((error) => {

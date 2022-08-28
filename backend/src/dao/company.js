@@ -1,9 +1,11 @@
 const db = require("../database/db");
 
 class ComapnyDAO {
-  async createComapny(name) {
+  async createComapny(company) {
+    const { name, cin } = company;
     const [id] = await db("comapny")
       .insert({
+        cin,
         name,
       })
       .returning("id");
