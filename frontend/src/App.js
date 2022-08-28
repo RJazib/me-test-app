@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Searchbar from './components/searchbar';
+import CompaniesSearchBar from './components/cpCompaniesSearchBar';
 
 const App = () => {
   return (
     <div className="App">
-      <Searchbar></Searchbar>
+      <CompaniesSearchBar />
     </div>
   );
 }
