@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ApiData from './components/getData';
+import Searchbar from './components/searchbar';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <ApiData></ApiData>
+      <Searchbar></Searchbar>
     </div>
   );
 }

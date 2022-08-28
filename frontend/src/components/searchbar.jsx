@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import useFetchData from '../hooks/fetchData'
+import useFetchCompanies from '../hooks/fetchCompanies'
 import SearchDropDown from "./autocomplete"
 
-const MyComponent = () => {
+const Seachbar = () => {
   const {
     data,
     loading,
-  } = useFetchData();
+  } = useFetchCompanies();
 
   const [companies, setCompanies] = useState([])
 
@@ -43,4 +43,4 @@ const MyComponent = () => {
   )
 }
 
-export default MyComponent;
+export default Seachbar;
